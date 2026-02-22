@@ -12,7 +12,7 @@
                    OpenPaneLength="200"
                    IsSettingsVisible="True">
         <ui:NavigationView.MenuItems>
-            <ui:NavigationViewItem Content="Главное" Tag="MainPage" IconSource="Home" />
+            <ui:NavigationViewItem Content="Главное" Tag="MainPage" IconSource="Home"/>
             <ui:NavigationViewItem Content="Банк и касса" Tag="BankPage" IconSource="Calculator" />
             <ui:NavigationViewItem Content="Покупки" Tag="PurchasesPage" IconSource="Shop" />
             <ui:NavigationViewItem Content="Продажи" Tag="SalesPage" IconSource="Tag" />
@@ -21,11 +21,6 @@
             <ui:NavigationViewItem Content="Отчеты" Tag="ReportsPage" IconSource="Library" />
             <ui:NavigationViewItem Content="Справочники" Tag="DictionariesPage" IconSource="ContactInfo" />
         </ui:NavigationView.MenuItems>
-        <Grid>
-            <TextBlock Text="Содержимое выбранного раздела появится здесь" 
-                       HorizontalAlignment="Center" 
-                       VerticalAlignment="Center" 
-                       Foreground="{DynamicResource TextFillColorSecondaryBrush}"/>
-        </Grid>
+        <ui:Frame Name="ContentFrame" Padding="0" />
     </ui:NavigationView>
 </Window>
