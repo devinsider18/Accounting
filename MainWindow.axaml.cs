@@ -4,11 +4,13 @@ namespace Calculus
 {
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
             InitializeComponent();
-            ContentFrame.Navigate(typeof(HomeView));
+            Nav.MainFrame = ContentFrame;
             NavMenu.SelectionChanged += menu;
+            Nav.Go(typeof(HomeView));
         }
         private void menu(object? sender, NavigationViewSelectionChangedEventArgs e)
         {
@@ -19,28 +21,28 @@ namespace Calculus
                     switch (tag)
                     {
                         case "MainPage":
-                            ContentFrame.Navigate(typeof(HomeView));
+                            Nav.Go(typeof(HomeView));
                             break;
                         case "BankPage":
-                            ContentFrame.Navigate(typeof(BankView));
+                            Nav.Go(typeof(BankView));
                             break;
                         case "PurchasesPage":
-                            ContentFrame.Navigate(typeof(PurchasesView));
+                            Nav.Go(typeof(PurchasesView));
                             break;
                         case "SalesPage":
-                            ContentFrame.Navigate(typeof(SalesView));
+                            Nav.Go(typeof(SalesView));
                             break;
                         case "WarehousePage":
-                            ContentFrame.Navigate(typeof(WarehouseView));
+                            Nav.Go(typeof(WarehouseView));
                             break;
                         case "OperationsPage":
-                            ContentFrame.Navigate(typeof(OperationView));
+                            Nav.Go(typeof(OperationView));
                             break;
                         case "ReportsPage":
-                            ContentFrame.Navigate(typeof(ReportsView));
+                            Nav.Go(typeof(ReportsView));
                             break;
                         case "DictionariesPage":
-                            ContentFrame.Navigate(typeof(DictionariesView));
+                            Nav.Go(typeof(DictionariesView));
                             break;
                     }
                 }

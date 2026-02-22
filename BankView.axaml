@@ -5,7 +5,6 @@
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="650"
              x:Class="Calculus.BankView">
-
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
@@ -13,14 +12,10 @@
                 <TextBlock Text="Учет денежных операций, работа с выписками и кассовая отчетность" 
                            Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
             </StackPanel>
-
             <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
-
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
-                
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="БАНК" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
-                    
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#0078D4"/>
@@ -30,8 +25,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Paymentorders" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -40,7 +34,6 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="People" FontSize="24" Foreground="#0078D4"/>
@@ -50,9 +43,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
                     <TextBlock Text="СЕРВИС И НАСТРОЙКИ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    
                     <Button HorizontalAlignment="Stretch" Height="60" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Sync" FontSize="20"/>
@@ -60,10 +51,8 @@
                         </StackPanel>
                     </Button>
                 </StackPanel>
-
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КАССА" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Folder" FontSize="24" Foreground="#107C10"/>
@@ -73,7 +62,6 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Contact" FontSize="24" Foreground="#107C10"/>
@@ -83,7 +71,6 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="ViewAll" FontSize="24" Foreground="#107C10"/>
@@ -93,9 +80,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-
                     <TextBlock Text="ОТЧЕТНОСТЬ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-
                     <Button HorizontalAlignment="Stretch" Height="60" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Print" FontSize="20"/>
@@ -103,7 +88,6 @@
                         </StackPanel>
                     </Button>
                 </StackPanel>
-
             </Grid>
         </StackPanel>
     </ScrollViewer>

@@ -10,4 +10,18 @@ public partial class BankView : UserControl
     {
         InitializeComponent();
     }
+    
+    private void menu(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Button button = (Button)sender;
+        if(button.Name != null)
+        {
+            switch (button.Name)
+            {
+                case "Paymentorders":
+                    Nav.Go(typeof(Payment_orders));
+                    break;
+            }
+        }
+    }
 }

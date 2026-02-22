@@ -1,0 +1,61 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
+             x:Class="Calculus.Payment_orders">
+    <Grid RowDefinitions="Auto, Auto, *" Margin="20">
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Платежные поручения" FontSize="24" FontWeight="SemiBold"/>
+            <WrapPanel Orientation="Horizontal" ItemWidth="250" Margin="0,5,0,0">
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <TextBlock Text="Организация:" FontSize="12" Opacity="0.7"/>
+                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите организацию" />
+                </StackPanel>
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <TextBlock Text="Банковский счет:" FontSize="12" Opacity="0.7"/>
+                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите счет" />
+                </StackPanel>
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <TextBlock Text="Дата:" FontSize="12" Opacity="0.7"/>
+                    <CalendarDatePicker HorizontalAlignment="Stretch" />
+                </StackPanel>
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <TextBlock Text="Контрагент:" FontSize="12" Opacity="0.7"/>
+                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Все контрагенты" />
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
+        <Grid Grid.Row="1" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="10">
+                <Button Content="Создать" Classes="accent" />
+                <Button Content="Загрузить" />
+                <Button Content="Оплатить" />
+                <Button Content="Печать" />
+            </StackPanel>
+            <TextBox Grid.Column="1" Width="250" Watermark="Поиск">
+                <TextBox.InnerRightContent>
+                    <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray"/>
+                </TextBox.InnerRightContent>
+            </TextBox>
+        </Grid>
+        <Border Grid.Row="2" 
+                Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}" 
+                CornerRadius="8" ClipToBounds="True"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1">
+            <DataGrid Name="PaymentsGrid" IsReadOnly="True" GridLinesVisibility="Horizontal">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Дата" Width="100" />
+                    <DataGridTextColumn Header="Номер" Width="120" />
+                    <DataGridTextColumn Header="Сумма" Width="120" />
+                    <DataGridTextColumn Header="Назначение платежа" Width="*" />
+                    <DataGridTextColumn Header="Получатель" Width="200" />
+                    <DataGridTextColumn Header="Состояние" Width="120" />
+                    <DataGridTextColumn Header="Вид операции" Width="150" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>
