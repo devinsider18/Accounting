@@ -1,0 +1,100 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
+             x:Class="Calculus.ReportsView">
+    <ScrollViewer>
+        <StackPanel Margin="40" Spacing="30">
+            <StackPanel Spacing="5">
+                <TextBlock Text="Отчеты и Аналитика" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="Стандартные бухгалтерские отчеты, налоговые регистры и управленческая аналитика" 
+                           Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+            <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
+                <StackPanel Grid.Column="0" Spacing="15">
+                    <TextBlock Text="СТАНДАРТНЫЕ ОТЧЕТЫ" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#0078D4"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Оборотно-сальдовая ведомость (ОСВ)" FontWeight="Medium"/>
+                                <TextBlock Text="Главный отчет по всем счетам, оборотам и остаткам" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#0078D4"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Карточка счета" FontWeight="Medium"/>
+                                <TextBlock Text="Детальная история всех проводок по конкретному счету" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#0078D4"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Главная книга" FontWeight="Medium"/>
+                                <TextBlock Text="Сводные данные по оборотам счетов за период" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="НАЛОГИ И ФОНДЫ" FontWeight="Bold" FontSize="12" Foreground="#881798" Margin="0,15,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Tag" FontSize="24" Foreground="#881798"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Книга покупок и продаж (НДС)" FontWeight="Medium"/>
+                                <TextBlock Text="Сводные регистры для расчета налога на добавленную стоимость" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Calendar" FontSize="24" Foreground="#881798"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Регламентированная отчетность" FontWeight="Medium"/>
+                                <TextBlock Text="Налоговые декларации и отчеты в контролирующие органы" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Spacing="15">
+                    <TextBlock Text="ДЛЯ РУКОВОДИТЕЛЯ" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="AllApps" FontSize="24" Foreground="#107C10"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Финансовые результаты" FontWeight="Medium"/>
+                                <TextBlock Text="Анализ прибылей и убытков, рентабельность бизнеса" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="АНАЛИЗ И АУДИТ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Find" FontSize="24"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Экспресс-проверка ведения учета" FontWeight="Medium"/>
+                                <TextBlock Text="Автоматический поиск ошибок в проводках и документах" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Setting" FontSize="24"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Анализ учета по налогу на прибыль" FontWeight="Medium"/>
+                                <TextBlock Text="Сверка данных бухгалтерского и налогового учета" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>

@@ -1,0 +1,109 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
+             x:Class="Calculus.DictionariesView">
+    <ScrollViewer>
+        <StackPanel Margin="40" Spacing="30">
+            <StackPanel Spacing="5">
+                <TextBlock Text="Справочники и Настройки" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="Базовые классификаторы, списки контрагентов, номенклатуры и статей учета" 
+                           Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+            <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
+                <StackPanel Grid.Column="0" Spacing="15">
+                    <TextBlock Text="ПАРТНЕРЫ И КОНТРАКТЫ" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="People" FontSize="24" Foreground="#0078D4"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Контрагенты" FontWeight="Medium"/>
+                                <TextBlock Text="Покупатели, поставщики и прочие партнеры" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#0078D4"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Договоры" FontWeight="Medium"/>
+                                <TextBlock Text="Основания для взаиморасчетов с контрагентами" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="НОМЕНКЛАТУРА И СКЛАД" FontWeight="Bold" FontSize="12" Foreground="#107C10" Margin="0,15,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#107C10"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Номенклатура" FontWeight="Medium"/>
+                                <TextBlock Text="Справочник товаров, материалов и услуг" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Home" FontSize="24" Foreground="#107C10"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Склады" FontWeight="Medium"/>
+                                <TextBlock Text="Места хранения материальных ценностей" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Spacing="15">
+                    <TextBlock Text="ПРЕДПРИЯТИЕ" FontWeight="Bold" FontSize="14" Foreground="#881798" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="ContactInfo" FontSize="24" Foreground="#881798"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Сотрудники" FontWeight="Medium"/>
+                                <TextBlock Text="Штатный персонал и физические лица" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Setting" FontSize="24" Foreground="#881798"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Основные средства (ОС)" FontWeight="Medium"/>
+                                <TextBlock Text="Оборудование, транспорт и недвижимость" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <TextBlock Text="ФИНАНСОВАЯ АНАЛИТИКА" FontWeight="Bold" FontSize="12" Foreground="#00B294" Margin="0,15,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Sync" FontSize="24" Foreground="#00B294"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Статьи движения денежных средств" FontWeight="Medium"/>
+                                <TextBlock Text="Аналитика для отчета о движении денежных средств (ДДС)" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Calculator" FontSize="24" Foreground="#00B294"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Статьи затрат" FontWeight="Medium"/>
+                                <TextBlock Text="Классификация расходов предприятия" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Folder" FontSize="24" Foreground="#00B294"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Номенклатурные группы" FontWeight="Medium"/>
+                                <TextBlock Text="Разделение выручки и себестоимости по направлениям" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
