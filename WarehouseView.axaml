@@ -1,0 +1,110 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
+             x:Class="Calculus.WarehouseView">
+    <ScrollViewer>
+        <StackPanel Margin="40" Spacing="30">
+            <StackPanel Spacing="5">
+                <TextBlock Text="Склад" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="Управление запасами, инвентаризация и контроль товарных остатков" 
+                           Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+            </StackPanel>
+            <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
+            <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
+                <StackPanel Grid.Column="0" Spacing="15">
+                    <TextBlock Text="ДВИЖЕНИЕ И ЦЕНЫ" FontWeight="Bold" FontSize="14" Foreground="#D83B01" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Sync" FontSize="24" Foreground="#D83B01"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Перемещение товаров" FontWeight="Medium"/>
+                                <TextBlock Text="Передача запасов между складами" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#D83B01"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Расход материалов" FontWeight="Medium"/>
+                                <TextBlock Text="Списание ТМЦ на нужды компании (Требования)" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#D83B01"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Комплектация номенклатуры" FontWeight="Medium"/>
+                                <TextBlock Text="Сборка готовой продукции из комплектующих" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Tag" FontSize="24" Foreground="#D83B01"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Установка цен номенклатуры" FontWeight="Medium"/>
+                                <TextBlock Text="Фиксация оптовых и закупочных цен" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel Grid.Column="1" Spacing="15">
+                    <TextBlock Text="ИНВЕНТАРИЗАЦИЯ" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#107C10"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Инвентаризация товаров" FontWeight="Medium"/>
+                                <TextBlock Text="Сверка фактических и учетных остатков" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Grid ColumnDefinitions="*, *" ColumnSpacing="15">
+                        <Button Grid.Column="0" HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <ui:SymbolIcon Symbol="Add" FontSize="20" Foreground="#107C10"/>
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock Text="Оприходование" FontWeight="Medium" FontSize="12"/>
+                                    <TextBlock Text="Учет излишков" FontSize="10" Opacity="0.6"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Button>
+                        <Button Grid.Column="1" HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <ui:SymbolIcon Symbol="Delete" FontSize="20" Foreground="#E81123"/>
+                                <StackPanel VerticalAlignment="Center">
+                                    <TextBlock Text="Списание" FontWeight="Medium" FontSize="12"/>
+                                    <TextBlock Text="Учет недостач" FontSize="10" Opacity="0.6"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+                    <TextBlock Text="ОТЧЕТЫ ПО СКЛАДУ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Find" FontSize="24"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Остатки товаров" FontWeight="Medium"/>
+                                <TextBlock Text="Актуальные остатки на складах компании" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="AllApps" FontSize="24"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Движение товаров" FontWeight="Medium"/>
+                                <TextBlock Text="Анализ поступлений и отгрузок за период" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
