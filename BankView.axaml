@@ -16,7 +16,7 @@
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="БАНК" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Bankstatements" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -34,7 +34,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Paymentsonregisters" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="People" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -46,7 +46,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КАССА" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Cashdocuments" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Folder" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -55,7 +55,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Advancereports" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Contact" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -64,7 +64,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="cardtranscations" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="ViewAll" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">

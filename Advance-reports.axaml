@@ -27,6 +27,11 @@
                         <DropDownButton.Flyout>
                             <MenuFlyout Placement="Bottom">
                                 <MenuItem Header="Авансовый отчет (АО-1)" />
+                                <MenuItem Header="Приходный ордер (М-4)" />
+                                <MenuItem Header="Кассовые чеки" />
+                                <MenuItem Header='Справка-расчет "Рублевые суммы документа в валюте"' />
+                                <MenuItem Header="Реестр билетов" />
+                                <MenuItem Header="Реестр документов" />
                             </MenuFlyout>
                         </DropDownButton.Flyout>
                     </DropDownButton>
@@ -34,15 +39,19 @@
                         <DropDownButton.Flyout>
                             <MenuFlyout Placement="Bottom">
                                 <MenuItem Header="Выдача наличных" />
+                                <MenuItem Header="Платежное поручение" />
+                                <MenuItem Header="Поступление на расчетный счет" />
+                                <MenuItem Header="Поступление наличных" />
+                                <MenuItem Header="Расход материалов" />
                                 <MenuItem Header="Списание с расчетного счета" />
-                                <MenuItem Header="Поступление товаров и услуг" />
+                                <MenuItem Header="Счет-фактура полученный" />
                             </MenuFlyout>
                         </DropDownButton.Flyout>
                     </DropDownButton>
                 </StackPanel>
             </ScrollViewer>
             <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" Margin="10,0,0,0">
-                <TextBox Width="200" Watermark="Поиск (Ctrl+F)">
+                <TextBox Width="200" Watermark="Поиск">
                     <TextBox.InnerRightContent>
                         <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray"/>
                     </TextBox.InnerRightContent>
