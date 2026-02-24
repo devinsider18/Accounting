@@ -22,16 +22,18 @@
         <Grid Grid.Row="1" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
             <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                 <StackPanel Orientation="Horizontal" Spacing="8">
-                    <Button Content="Создать" />
+                    <Button Content="Создать" Classes="accent" />
                     <Button Content="Загрузить из файла" />
                     <Button Content="Реестр документов" />
-                    <Button Content="Создать на основании" />
-                    <Button>
-                        <ui:SymbolIcon Symbol="List" FontSize="16"/>
-                    </Button>
-                    <Button>
-                        <ui:SymbolIcon Symbol="Attach" FontSize="16"/>
-                    </Button>
+                    <DropDownButton Content="Создать на основании">
+                        <DropDownButton.Flyout>
+                            <MenuFlyout Placement="Bottom">
+                                <MenuItem Header="Операция по платежной карте" />
+                                <MenuItem Header="Поступление на расчетный счет" />
+                                <MenuItem Header="Счет-фактура выданный" />
+                            </MenuFlyout>
+                        </DropDownButton.Flyout>
+                    </DropDownButton>
                 </StackPanel>
             </ScrollViewer>
             <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" Margin="10,0,0,0">
@@ -41,7 +43,6 @@
                     </TextBox.InnerRightContent>
                 </TextBox>
                 <Button Content="Еще" />
-                <Button Content="?" />
             </StackPanel>
         </Grid>
         <Border Grid.Row="2" 

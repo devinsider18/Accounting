@@ -31,8 +31,22 @@
             <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="10">
                 <Button Content="Создать" Classes="accent" />
                 <Button Content="Загрузить" />
-                <Button Content="Оплатить" />
-                <Button Content="Печать" />
+                <DropDownButton Content="Оплатить">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuItem Header="Начисленные налоги и взносы" />
+                            <MenuItem Header="Товары и услуги" />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
+                <DropDownButton Content="Печать">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout Placement="Bottom">
+                            <MenuItem Header="Платежное поручение" />
+                            <MenuItem Header="Реестр документов" />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
             </StackPanel>
             <TextBox Grid.Column="1" Width="250" Watermark="Поиск">
                 <TextBox.InnerRightContent>

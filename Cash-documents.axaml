@@ -24,21 +24,12 @@
                 <StackPanel Orientation="Horizontal" Spacing="8">
                     <Button Content="+ Поступление" Classes="accent" />
                     <Button Content="- Выдача" />
-                    <Button Content="Кассовая книга" />
-                    <DropDownButton Content="Печать">
-                        <DropDownButton.Flyout>
-                            <MenuFlyout Placement="Bottom">
-                                <MenuItem Header="Приходный кассовый ордер (КО-1)" />
-                                <MenuItem Header="Расходный кассовый ордер (КО-2)" />
-                                <MenuItem Header="Журнал регистрации (КО-3)" />
-                            </MenuFlyout>
-                        </DropDownButton.Flyout>
-                    </DropDownButton>
                     <DropDownButton Content="Создать на основании">
                         <DropDownButton.Flyout>
                             <MenuFlyout Placement="Bottom">
-                                <MenuItem Header="Авансовый отчет" />
-                                <MenuItem Header="Взнос наличными в банк" />
+                                <MenuItem Header="Поступление на расчетный счет" />
+                                <MenuItem Header="Счет-фактура выданный" />
+                                <MenuItem Header="Счет-фактура полученный" />
                             </MenuFlyout>
                         </DropDownButton.Flyout>
                     </DropDownButton>
