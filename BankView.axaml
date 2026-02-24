@@ -43,13 +43,6 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <TextBlock Text="СЕРВИС И НАСТРОЙКИ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="60" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Sync" FontSize="20"/>
-                            <TextBlock Text="Обмен с банками" VerticalAlignment="Center"/>
-                        </StackPanel>
-                    </Button>
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КАССА" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
@@ -78,13 +71,6 @@
                                 <TextBlock Text="Операции по платежным картам" FontWeight="Medium"/>
                                 <TextBlock Text="Эквайринг и расчеты с банками" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <TextBlock Text="ОТЧЕТНОСТЬ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="60" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Print" FontSize="20"/>
-                            <TextBlock Text="Кассовая книга (КО-4)" VerticalAlignment="Center"/>
                         </StackPanel>
                     </Button>
                 </StackPanel>
