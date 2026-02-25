@@ -12,7 +12,7 @@ namespace Calculus
             NavMenu.SelectionChanged += menu;
             Nav.Go(typeof(HomeView));
         }
-        private void menu(object? sender, NavigationViewSelectionChangedEventArgs e)
+        private void menu(object sender, NavigationViewSelectionChangedEventArgs e)
         {
             if (e.SelectedItem is NavigationViewItem item)
             {
