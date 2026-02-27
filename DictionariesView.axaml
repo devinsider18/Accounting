@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
-             x:Class="Calculus.DictionariesView">
+             x:Class="Accounting.DictionariesView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">

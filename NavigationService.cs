@@ -1,7 +1,7 @@
 ﻿using FluentAvalonia.UI.Controls;
 using System;
 
-namespace Calculus
+namespace Accounting
 {
     public static class Nav
     {

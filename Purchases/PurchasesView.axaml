@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
-             x:Class="Calculus.PurchasesView">
+             x:Class="Accounting.PurchasesView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
@@ -91,22 +91,12 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <TextBlock Text="ВЭД И ЭДО" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Globe" FontSize="24"/>
                             <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Таможенные декларации (Импорт)" FontWeight="Medium"/>
+                                <TextBlock Text="Таможенные декларации" FontWeight="Medium"/>
                                 <TextBlock Text="Учет ГТД и таможенных пошлин" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Mail" FontSize="24"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Текущие дела ЭДО" FontWeight="Medium"/>
-                                <TextBlock Text="Входящие электронные документы" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>

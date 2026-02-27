@@ -4,8 +4,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:ui="using:FluentAvalonia.UI.Controls"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="600"
-        x:Class="Calculus.MainWindow"
-        Title="Calculus">
+        x:Class="Accounting.MainWindow"
+        Title="Accounting">
     <ui:NavigationView Name="NavMenu"
                    PaneDisplayMode="LeftCompact" 
                    CompactPaneLength="50"

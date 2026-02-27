@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Calculus;
+namespace Accounting;
 
 public partial class SalesView : UserControl
 {

@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 using FluentAvalonia.UI.Controls;
-namespace Calculus
+namespace Accounting
 {
     public partial class MainWindow : Window
     {

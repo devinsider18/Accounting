@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
-             x:Class="Calculus.card_transactions">
+             x:Class="Accounting.card_transactions">
     <Grid RowDefinitions="Auto, Auto, *" Margin="20">
         <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
             <TextBlock Text="Операции по платежным картам" FontSize="24" FontWeight="SemiBold"/>

@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace Calculus;
+namespace Accounting;
 
 public partial class Payment_orders : UserControl
 {

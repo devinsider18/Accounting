@@ -1,6 +1,6 @@
 ﻿using Avalonia;
 using System;
-namespace Calculus
+namespace Accounting
 {
     internal class Program
     {

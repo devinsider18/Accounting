@@ -1,5 +1,5 @@
 using Avalonia.Controls;
-namespace Calculus;
+namespace Accounting;
 public partial class BankView : UserControl
 {
     public BankView()
