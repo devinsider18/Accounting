@@ -11,12 +11,11 @@
             <WrapPanel Orientation="Horizontal" ItemWidth="250" Margin="0,5,0,0">
                 <StackPanel Spacing="5" Margin="0,0,15,10">
                     <CheckBox Content="Контрагент:" FontSize="12" Opacity="0.7" IsChecked="False"/>
-                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите контрагента" />
+                    <ComboBox HorizontalAlignment="Stretch"/>
                 </StackPanel>
                 <StackPanel Spacing="5" Margin="0,0,15,10">
                     <CheckBox Content="Организация:" FontSize="12" Opacity="0.7" IsChecked="True"/>
                     <ComboBox HorizontalAlignment="Stretch" SelectedIndex="0">
-                        <ComboBoxItem Content="Конфетпром ООО" />
                     </ComboBox>
                 </StackPanel>
             </WrapPanel>
@@ -40,7 +39,7 @@
                     </Button>
                     </StackPanel>
             </ScrollViewer>
-            <TextBox Grid.Column="1" Width="250" Watermark="Поиск (Ctrl+F)" Margin="10,0,0,0">
+            <TextBox Grid.Column="1" Width="250" Watermark="Поиск" Margin="10,0,0,0">
                 <TextBox.InnerRightContent>
                     <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray"/>
                 </TextBox.InnerRightContent>
