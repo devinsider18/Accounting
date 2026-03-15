@@ -1,0 +1,91 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             x:Class="Accounting.Trusts">
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Margin="20">
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Доверенности" FontSize="24" FontWeight="SemiBold"/>
+            <WrapPanel Orientation="Horizontal" ItemWidth="250" Margin="0,5,0,0">
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <CheckBox Content="Контрагент:" FontSize="12" Opacity="0.7" IsChecked="False"/>
+                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите контрагента" />
+                </StackPanel>
+                <StackPanel Spacing="5" Margin="0,0,15,10">
+                    <CheckBox Content="Организация:" FontSize="12" Opacity="0.7" IsChecked="True"/>
+                    <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите организацию" />
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button Content="Создать" Classes="accent">
+                        <Button.ContentTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                                    <ui:SymbolIcon Symbol="Add"/> 
+                                    <TextBlock Text="Создать"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </Button.ContentTemplate>
+                    </Button>
+                    <Button Content="Создать на основании">
+                        <Button.ContentTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
+                                    <TextBlock Text="Создать на основании"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </Button.ContentTemplate>
+                        <Button.Flyout>
+                            <MenuFlyout>
+                                <MenuItem Header="Поступление (акт, накладная, УПД)" />
+                            </MenuFlyout>
+                        </Button.Flyout>
+                    </Button>
+                </StackPanel>
+            </ScrollViewer>
+            <TextBox Grid.Column="1" Width="250" Watermark="Поиск" Margin="10,0,0,0">
+                <TextBox.InnerRightContent>
+                    <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray"/>
+                </TextBox.InnerRightContent>
+            </TextBox>
+        </Grid>
+
+        <Border Grid.Row="2" 
+                Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}" 
+                CornerRadius="8" ClipToBounds="True"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1">
+            <DataGrid Name="TrustsGrid" IsReadOnly="True" GridLinesVisibility="Horizontal">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Дата" Width="100" />
+                    <DataGridTextColumn Header="Номер" Width="120" />
+                    <DataGridTextColumn Header="Подотчетное лицо" Width="220" />
+                    <DataGridTextColumn Header="Контрагент" Width="220" />
+                    <DataGridTextColumn Header="Организация" Width="200" />
+                    <DataGridTextColumn Header="Ответственный" Width="200" />
+                    <DataGridTextColumn Header="Комментарий" Width="250" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <Border Grid.Row="3" Margin="0,15,0,0" Padding="15,12" 
+                Background="{DynamicResource LayerOnMicaBaseAltFillColorSecondaryBrush}" 
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1"
+                CornerRadius="8">
+            <Grid ColumnDefinitions="Auto, *, Auto, Auto, Auto, Auto">
+                <TextBlock Grid.Column="0" Text="Итоги за период" FontSize="12" Opacity="0.6" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8" Margin="15,0">
+                    <TextBlock Text="Всего документов:" FontSize="13" Opacity="0.7" VerticalAlignment="Center"/>
+                    <TextBlock Text="0" FontSize="13" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>
