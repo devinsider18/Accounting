@@ -73,7 +73,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <TextBlock Text="ОТЧЕТЫ И ЭДО" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
+                    <TextBlock Text="ОТЧЕТЫ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
                     <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Find" FontSize="24"/>
