@@ -6,13 +6,10 @@
              mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
              x:Class="Accounting.Implementation">
     <Grid RowDefinitions="Auto, Auto, Auto, *, Auto" Margin="20">
-        <!-- Header -->
         <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
             <TextBlock Text="Реализация (акты, накладные, УПД)" FontSize="24" FontWeight="SemiBold" />
             <TextBlock Text="Оформление продажи товаров и услуг" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
         </StackPanel>
-
-        <!-- Filters -->
         <WrapPanel Grid.Row="1" Orientation="Horizontal" ItemWidth="260" Margin="0,0,0,15">
             <StackPanel Spacing="5" Margin="0,0,15,10">
                 <TextBlock Text="Контрагент:" FontSize="12" Opacity="0.7"/>
@@ -23,12 +20,23 @@
                 <ComboBox HorizontalAlignment="Stretch" />
             </StackPanel>
         </WrapPanel>
-
-        <!-- Toolbar + Search -->
         <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
             <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
                 <StackPanel Orientation="Horizontal" Spacing="10">
                     <Button MinWidth="140" Height="40" Classes="accent">
+                        <Button.Flyout>
+                            <MenuFlyout>
+                                <MenuItem Header="Товары (накладная, УПД)" />
+                                <MenuItem Header="Услуги (акт, УПД)" />
+                                <MenuItem Header="Строительные работы" />
+                                <MenuItem Header="Товары и услуги" />
+                                <MenuItem Header="Передача на реализацию" />
+                                <MenuItem Header="Выкуп комиссионером" />
+                                <MenuItem Header="Продажа со склада комиссионера" />
+                                <MenuItem Header="Отгрузка без перехода права собственности" />
+                                <MenuItem Header="Оборудование" />
+                            </MenuFlyout>
+                        </Button.Flyout>
                         <Button.ContentTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal" Spacing="8" VerticalAlignment="Center">
@@ -41,12 +49,22 @@
                     <Button MinWidth="180" Height="40">
                         <Button.Flyout>
                             <MenuFlyout>
-                                <MenuItem Header="Оказание производственных услуг" />
+                                <MenuItem Header="Акт о расхождениях (полученный)" />
+                                <MenuItem Header="Возврат товаров от покупателя" />
+                                <MenuItem Header="Заявление о ввозе товаров (полученное)" />
+                                <MenuItem Header="Корректировка реализации" />
                                 <MenuItem Header="Операция по платежной карте" />
+                                <MenuItem Header="Отражение начисления НДС" />
+                                <MenuItem Header="Отчет комиссионера (агента)" />
+                                <MenuItem Header="Передача задолженности на факторинг" />
                                 <MenuItem Header="Поступление на расчетный счет" />
                                 <MenuItem Header="Поступление наличных" />
-                                <MenuItem Header="Реализация (акт, накладная)" />
-                                <MenuItem Header="Розничная продажа (чек)" />
+                                <MenuItem Header="Реализация отгруженных товаров" />
+                                <MenuItem Header="Статистическая форма учета перемещения товаров" />
+                                <MenuItem Header="Счет покупателю" />
+                                <MenuItem Header="Счет-фактура выданный" />
+                                <MenuItem Header="Таможенная декларация (экспорт)" />
+                                <MenuItem Header="Уведомление о перемещении прослеживаемых товаров в ЕАЭС" />
                             </MenuFlyout>
                         </Button.Flyout>
                         <Button.ContentTemplate>
@@ -77,8 +95,6 @@
                 </TextBox.InnerRightContent>
             </TextBox>
         </Grid>
-
-        <!-- Data grid -->
         <Border Grid.Row="3"
                 Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
                 CornerRadius="8" ClipToBounds="True"
@@ -102,8 +118,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </Border>
-
-        <!-- Footer summary -->
         <Border Grid.Row="3" Margin="0,15,0,0" Padding="15,12"
                 Background="{DynamicResource LayerOnMicaBaseAltFillColorSecondaryBrush}"
                 BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
