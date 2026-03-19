@@ -2,6 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
+using Accounting.Purchases;
 
 namespace Accounting;
 
@@ -38,7 +39,7 @@ public partial class PurchasesView : UserControl
                     Nav.Go(typeof(Reconciliation_Statements_with_Counterparties));
                     break;
                 case "Debtadjustment":
-                    Nav.Go(typeof(Debt_adjustment));
+                    Nav.Go(typeof(DebtAdjustment));
                     break;
                 case "Trusts":
                     Nav.Go(typeof(Trusts));
