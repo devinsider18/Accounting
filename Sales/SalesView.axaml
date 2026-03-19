@@ -34,7 +34,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="InvoicesIssued" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -43,7 +43,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Returns" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Undo" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -55,7 +55,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КОНТРОЛЬ ОПЛАТ" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Reconciliations" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Sync" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -64,7 +64,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="DebtAdjustment" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Edit" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -73,22 +73,21 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <TextBlock Text="ОТЧЕТЫ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="InterestAccrual" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Find" FontSize="24"/>
+                            <ui:SymbolIcon Symbol="Clock" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Анализ продаж и долгов" FontWeight="Medium"/>
-                                <TextBlock Text="Счета, не оплаченные покупателями" FontSize="11" Opacity="0.6"/>
+                                <TextBlock Text="Начисление пеней" FontWeight="Medium"/>
+                                <TextBlock Text="Расчет штрафов за просрочку оплаты" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="SettlementsInventory" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="List" FontSize="24"/>
+                            <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Прайс-листы" FontWeight="Medium"/>
-                                <TextBlock Text="Управление ценами на товары и услуги" FontSize="11" Opacity="0.6"/>
+                                <TextBlock Text="Инвентаризация расчетов" FontWeight="Medium"/>
+                                <TextBlock Text="Проверка дебиторской и кредиторской задолженности" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
