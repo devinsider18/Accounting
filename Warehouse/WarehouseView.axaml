@@ -84,25 +84,6 @@
                             </StackPanel>
                         </Button>
                     </Grid>
-                    <TextBlock Text="ОТЧЕТЫ ПО СКЛАДУ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Find" FontSize="24"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Остатки товаров" FontWeight="Medium"/>
-                                <TextBlock Text="Актуальные остатки на складах компании" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="AllApps" FontSize="24"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Движение товаров" FontWeight="Medium"/>
-                                <TextBlock Text="Анализ поступлений и отгрузок за период" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
                 </StackPanel>
             </Grid>
         </StackPanel>
