@@ -1,0 +1,85 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             x:Class="Accounting.Material_consumption">
+    <Grid RowDefinitions="Auto, Auto, Auto, *, Auto" Margin="20">
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Расход материалов (Требования-накладные)" FontSize="24" FontWeight="SemiBold" />
+            <TextBlock Text="Журнал документов расхода и передачи материалов" 
+                       Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" ItemWidth="300" Margin="0,0,0,15">
+            <StackPanel Spacing="5" Margin="0,0,15,10">
+                <CheckBox Content="Склад:" FontSize="12" Opacity="0.7" MinHeight="20" Margin="0,0,0,-5"/>
+                <ComboBox HorizontalAlignment="Stretch" />
+            </StackPanel>
+            <StackPanel Spacing="5" Margin="0,0,15,10">
+                <CheckBox Content="Организация:" FontSize="12" Opacity="0.7" MinHeight="20" Margin="0,0,0,-5"/>
+                <ComboBox HorizontalAlignment="Stretch" />
+            </StackPanel>
+        </WrapPanel>
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button MinWidth="110" Height="40" Classes="accent">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <ui:SymbolIcon Symbol="Add" FontSize="16" />
+                        <TextBlock Text="Создать" />
+                    </StackPanel>
+                </Button>
+                <Button MinWidth="180" Height="40">
+                    <Button.Flyout>
+                        <MenuFlyout>
+                            <MenuItem Header="Реализация услуг по переработке" />
+                        </MenuFlyout>
+                    </Button.Flyout>
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <ui:SymbolIcon Symbol="Copy" FontSize="16" />
+                        <TextBlock Text="Создать на основании" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <TextBox Grid.Column="1" Width="250" Watermark="Поиск" Margin="10,0,0,0">
+                <TextBox.InnerRightContent>
+                    <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray" />
+                </TextBox.InnerRightContent>
+            </TextBox>
+        </Grid>
+        <Border Grid.Row="3" Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
+                CornerRadius="8" ClipToBounds="True" BorderThickness="1"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}">
+            <DataGrid Name="MaterialConsumptionGrid" IsReadOnly="True" GridLinesVisibility="Horizontal">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Width="40">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:SymbolIcon Symbol="Attach" FontSize="14" Foreground="Gray"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Дата" Width="110" />
+                    <DataGridTextColumn Header="Номер" Width="120" />
+                    <DataGridTextColumn Header="Вид операции" Width="160" />
+                    <DataGridTextColumn Header="Склад" Width="160" />
+                    <DataGridTextColumn Header="Организация" Width="160" />
+                    <DataGridTextColumn Header="Цель расхода" Width="150" />
+                    <DataGridTextColumn Header="Ответственный" Width="180" />
+                    <DataGridTextColumn Header="Комментарий" Width="200" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+        <Border Grid.Row="4" Margin="0,15,0,0" Padding="15,12" CornerRadius="8" BorderThickness="1"
+                Background="{DynamicResource LayerOnMicaBaseAltFillColorSecondaryBrush}"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}">
+            <Grid ColumnDefinitions="Auto, *, Auto">
+                <TextBlock Grid.Column="0" Text="Итоги за период" FontSize="12" Opacity="0.6" VerticalAlignment="Center"/>
+                <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8">
+                    <TextBlock Text="Всего документов:" FontSize="13" Opacity="0.7" VerticalAlignment="Center"/>
+                    <TextBlock Text="0" FontSize="13" FontWeight="SemiBold" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

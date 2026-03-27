@@ -30,7 +30,7 @@
                             <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#D83B01"/>
                             <StackPanel VerticalAlignment="Center">
                                 <TextBlock Text="Расход материалов" FontWeight="Medium"/>
-                                <TextBlock Text="Списание ТМЦ на нужды компании (Требования)" FontSize="11" Opacity="0.6"/>
+                                <TextBlock Text="Списание ТМЦ на нужды компании" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
@@ -84,6 +84,15 @@
                             </StackPanel>
                         </Button>
                     </Grid>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Refresh" FontSize="24" Foreground="#107C10"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Пересортица товаров" FontWeight="Medium"/>
+                                <TextBlock Text="Зачет излишков и недостач" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
                 </StackPanel>
             </Grid>
         </StackPanel>
