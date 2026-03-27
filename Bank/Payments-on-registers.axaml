@@ -42,7 +42,6 @@
                         <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray"/>
                     </TextBox.InnerRightContent>
                 </TextBox>
-                <Button Content="Еще" />
             </StackPanel>
         </Grid>
         <Border Grid.Row="2" 
