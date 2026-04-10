@@ -17,10 +17,6 @@
 			<PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="FluentAvaloniaUI" Version="2.5.0" />
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Update="SalesVIew.axaml.cs">
-			<DependentUpon>SalesView.axaml</DependentUpon>
-		</Compile>
+		<PackageReference Include="Tmds.DBus.Protocol" Version="0.21.3" />
 	</ItemGroup>
 </Project>
