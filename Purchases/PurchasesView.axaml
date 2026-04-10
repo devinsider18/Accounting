@@ -9,7 +9,7 @@
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
                 <TextBlock Text="Покупки" FontSize="28" FontWeight="SemiBold" />
-                <TextBlock Text="Учет поступлений товаров и услуг, работа с поставщиками и ВЭД" 
+                <TextBlock Text="Учет поступлений товаров и услуг, работа с поставщиками и ВЭД"
                            Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
             </StackPanel>
             <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />

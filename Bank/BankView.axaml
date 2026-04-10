@@ -9,7 +9,7 @@
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
                 <TextBlock Text="Банк и касса" FontSize="28" FontWeight="SemiBold" />
-                <TextBlock Text="Учет денежных операций, работа с выписками и кассовая отчетность" 
+                <TextBlock Text="Учет денежных операций, работа с выписками и кассовая отчетность"
                            Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
             </StackPanel>
             <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
