@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Bank;
 
-public partial class Bank_statements : UserControl
+public partial class BankStatements : UserControl
 {
-    public Bank_statements()
+    public BankStatements()
     {
         InitializeComponent();
     }

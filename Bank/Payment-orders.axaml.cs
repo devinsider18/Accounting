@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Bank;
 
-public partial class Payment_orders : UserControl
+public partial class PaymentOrders : UserControl
 {
-    public Payment_orders()
+    public PaymentOrders()
     {
         InitializeComponent();
     }

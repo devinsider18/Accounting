@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
-             x:Class="Accounting.Bank_statements">
+             x:Class="Accounting.Bank.BankStatements">
     <Grid RowDefinitions="Auto, Auto, *, Auto" Margin="20">
         <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
             <TextBlock Text="Банковские выписки" FontSize="24" FontWeight="SemiBold"/>

@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Invoices_from_suppliers : UserControl
+public partial class InvoicesFromSuppliers : UserControl
 {
-    public Invoices_from_suppliers()
+    public InvoicesFromSuppliers()
     {
         InitializeComponent();
     }

@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="650"
-             x:Class="Accounting.BankView">
+             x:Class="Accounting.Bank.BankView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
@@ -16,7 +16,7 @@
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="БАНК" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
-                    <Button Name="Bankstatements" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Bankstatements" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -25,7 +25,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Paymentorders" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Paymentorders" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -34,7 +34,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Paymentsonregisters" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Paymentsonregisters" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="People" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -46,7 +46,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КАССА" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    <Button Name="Cashdocuments" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Cashdocuments" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Folder" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -55,7 +55,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Advancereports" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Advancereports" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Contact" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -64,7 +64,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="cardtranscations" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="CardTransactions" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="ViewAll" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">

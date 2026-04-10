@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Invoices_Received : UserControl
+public partial class InvoicesReceived : UserControl
 {
-    public Invoices_Received()
+    public InvoicesReceived()
     {
         InitializeComponent();
     }

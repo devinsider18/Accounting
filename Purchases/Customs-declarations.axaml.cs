@@ -1,10 +1,10 @@
 using Avalonia.Controls;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Customs_declarations : UserControl
+public partial class CustomsDeclarations : UserControl
 {
-    public Customs_declarations()
+    public CustomsDeclarations()
     {
         InitializeComponent();
     }

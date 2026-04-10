@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="600"
-             x:Class="Accounting.Payment_orders">
+             x:Class="Accounting.Bank.PaymentOrders">
     <Grid RowDefinitions="Auto, Auto, *" Margin="20">
         <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
             <TextBlock Text="Платежные поручения" FontSize="24" FontWeight="SemiBold"/>

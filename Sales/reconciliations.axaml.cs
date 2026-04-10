@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Sales;
 
-public partial class reconciliations : UserControl
+public partial class Reconciliations : UserControl
 {
-    public reconciliations()
+    public Reconciliations()
     {
         InitializeComponent();
     }

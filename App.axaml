@@ -5,6 +5,10 @@
 
     <Application.Styles>
         <fa:FluentAvaloniaTheme />
+        <Style Selector="Button.accent">
+            <Setter Property="Background" Value="{DynamicResource AccentButtonBackground}" />
+            <Setter Property="Foreground" Value="{DynamicResource AccentButtonForeground}" />
+        </Style>
     </Application.Styles>
 
 </Application>

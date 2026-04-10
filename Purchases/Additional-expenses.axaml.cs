@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Additional_expenses : UserControl
+public partial class AdditionalExpenses : UserControl
 {
-    public Additional_expenses()
+    public AdditionalExpenses()
     {
         InitializeComponent();
     }

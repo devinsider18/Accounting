@@ -8,7 +8,7 @@ namespace Accounting
         public static Frame? MainFrame { get; set; }
         public static void Go(Type pageType)
         {
-            MainFrame.Navigate(pageType);
+            MainFrame?.Navigate(pageType);
         }
     }
 }

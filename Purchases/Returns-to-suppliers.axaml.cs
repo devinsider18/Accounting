@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Returns_to_suppliers : UserControl
+public partial class ReturnsToSuppliers : UserControl
 {
-    public Returns_to_suppliers()
+    public ReturnsToSuppliers()
     {
         InitializeComponent();
     }

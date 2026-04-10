@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
-             x:Class="Accounting.SalesView">
+             x:Class="Accounting.Sales.SalesView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
@@ -16,7 +16,7 @@
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="ОТГРУЗКА И СЧЕТА" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
-                    <Button Name="Invoices" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Invoices" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Mail" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -25,7 +25,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Implementation" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Implementation" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Send" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -34,7 +34,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="InvoicesIssued" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="InvoicesIssued" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -43,7 +43,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Returns" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Returns" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Undo" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -55,7 +55,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="КОНТРОЛЬ ОПЛАТ" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    <Button Name="Reconciliations" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="Reconciliations" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Sync" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -64,7 +64,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="DebtAdjustment" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="DebtAdjustment" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Edit" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -73,7 +73,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="InterestAccrual" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="InterestAccrual" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Clock" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -82,7 +82,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="SettlementsInventory" Click="menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
+                    <Button Name="SettlementsInventory" Click="Menu" HorizontalAlignment="Stretch" Height="70" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">

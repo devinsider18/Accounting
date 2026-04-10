@@ -1,8 +1,7 @@
-using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 
-namespace Accounting;
+namespace Accounting.Sales;
 
 public partial class SalesView : UserControl
 {
@@ -11,7 +10,7 @@ public partial class SalesView : UserControl
         InitializeComponent();
     }
 
-    private void menu(object sender, RoutedEventArgs e)
+    private void Menu(object sender, RoutedEventArgs e)
     {
         if (sender is Button button && button.Name != null)
         {
@@ -27,13 +26,13 @@ public partial class SalesView : UserControl
                     Nav.Go(typeof(InvoicesIssued));
                     break;
                 case "Returns":
-                    Nav.Go(typeof(returns));
+                    Nav.Go(typeof(Returns));
                     break;
                 case "Reconciliations":
-                    Nav.Go(typeof(reconciliations));
+                    Nav.Go(typeof(Reconciliations));
                     break;
                 case "DebtAdjustment":
-                    Nav.Go(typeof(debt_adjustment));
+                    Nav.Go(typeof(DebtAdjustment));
                     break;
                 case "InterestAccrual":
                     Nav.Go(typeof(InterestAccrual));

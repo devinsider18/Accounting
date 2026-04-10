@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Warehouse;
 
-public partial class Material_consumption : UserControl
+public partial class MaterialConsumption : UserControl
 {
-    public Material_consumption()
+    public MaterialConsumption()
     {
         InitializeComponent();
     }

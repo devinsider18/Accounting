@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
-             x:Class="Accounting.Inventory_Assembly">
+             x:Class="Accounting.Warehouse.InventoryAssembly">
     <Grid RowDefinitions="Auto, Auto, Auto, *, Auto" Margin="20">
         
         <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">

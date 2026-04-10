@@ -1,5 +1,9 @@
 using Avalonia.Controls;
 using FluentAvalonia.UI.Controls;
+using Accounting.Bank;
+using Accounting.Sales;
+using Accounting.Purchases;
+using Accounting.Warehouse;
 namespace Accounting
 {
     public partial class MainWindow : Window
@@ -9,10 +13,10 @@ namespace Accounting
         {
             InitializeComponent();
             Nav.MainFrame = ContentFrame;
-            NavMenu.SelectionChanged += menu;
+            NavMenu.SelectionChanged += Menu;
             Nav.Go(typeof(HomeView));
         }
-        private void menu(object sender, NavigationViewSelectionChangedEventArgs e)
+        private void Menu(object? sender, NavigationViewSelectionChangedEventArgs e)
         {
             if (e.SelectedItem is NavigationViewItem item)
             {

@@ -4,7 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
-             x:Class="Accounting.PurchasesView">
+             x:Class="Accounting.Purchases.PurchasesView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
@@ -16,7 +16,7 @@
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="ПОСТУПЛЕНИЯ" FontWeight="Bold" FontSize="14" Foreground="#0078D4" Margin="0,0,0,5"/>
-                    <Button Name="Invoicesfromsuppliers" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Invoicesfromsuppliers" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Document" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -25,7 +25,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Admission" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Admission" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Download" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -34,7 +34,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Additionalexpenses" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Additionalexpenses" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Calculator" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -43,7 +43,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="InvoicesReceived" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="InvoicesReceived" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -52,7 +52,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Returnstosuppliers" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Returnstosuppliers" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Undo" FontSize="24" Foreground="#0078D4"/>
                             <StackPanel VerticalAlignment="Center">
@@ -64,7 +64,7 @@
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="РАСЧЕТЫ С КОНТРАГЕНТАМИ" FontWeight="Bold" FontSize="14" Foreground="#107C10" Margin="0,0,0,5"/>
-                    <Button Name="ReconciliationStatementswithCounterparties" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="ReconciliationStatementswithCounterparties" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Sync" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -73,7 +73,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Debtadjustment" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Debtadjustment" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Edit" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -82,7 +82,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Trusts" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Trusts" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="ContactInfo" FontSize="24" Foreground="#107C10"/>
                             <StackPanel VerticalAlignment="Center">
@@ -91,7 +91,7 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button Name="Customsdeclarations" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="menu">
+                    <Button Name="Customsdeclarations" HorizontalAlignment="Stretch" Height="70" CornerRadius="8" Click="Menu">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Globe" FontSize="24"/>
                             <StackPanel VerticalAlignment="Center">

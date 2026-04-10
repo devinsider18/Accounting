@@ -1,10 +1,7 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 using Avalonia.Interactivity;
-using Accounting.Purchases;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
 public partial class PurchasesView : UserControl
 {
@@ -13,7 +10,7 @@ public partial class PurchasesView : UserControl
         InitializeComponent();
     }
 
-    private void menu(object sender, RoutedEventArgs e)
+    private void Menu(object sender, RoutedEventArgs e)
     {
         Button button = (Button)sender;
         if (button.Name != null)
@@ -21,22 +18,22 @@ public partial class PurchasesView : UserControl
             switch (button.Name)
             {
                 case "Invoicesfromsuppliers":
-                    Nav.Go(typeof(Invoices_from_suppliers));
+                    Nav.Go(typeof(InvoicesFromSuppliers));
                     break;
                 case "Admission":
                     Nav.Go(typeof(Admission));
                     break;
                 case "Additionalexpenses":
-                    Nav.Go(typeof(Additional_expenses));
+                    Nav.Go(typeof(AdditionalExpenses));
                     break;
                 case "InvoicesReceived":
-                    Nav.Go(typeof(Invoices_Received));
+                    Nav.Go(typeof(InvoicesReceived));
                     break;
                 case "Returnstosuppliers":
-                    Nav.Go(typeof(Returns_to_suppliers));
+                    Nav.Go(typeof(ReturnsToSuppliers));
                     break;
                 case "ReconciliationStatementswithCounterparties":
-                    Nav.Go(typeof(Reconciliation_Statements_with_Counterparties));
+                    Nav.Go(typeof(ReconciliationStatementsWithCounterparties));
                     break;
                 case "Debtadjustment":
                     Nav.Go(typeof(DebtAdjustment));
@@ -45,7 +42,7 @@ public partial class PurchasesView : UserControl
                     Nav.Go(typeof(Trusts));
                     break;
                 case "Customsdeclarations":
-                    Nav.Go(typeof(Customs_declarations));
+                    Nav.Go(typeof(CustomsDeclarations));
                     break;
             }
         }

@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
 public partial class Trusts : UserControl
 {

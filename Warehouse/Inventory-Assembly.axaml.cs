@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Warehouse;
 
-public partial class Inventory_Assembly : UserControl
+public partial class InventoryAssembly : UserControl
 {
-    public Inventory_Assembly()
+    public InventoryAssembly()
     {
         InitializeComponent();
     }

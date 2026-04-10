@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Purchases;
 
-public partial class Reconciliation_Statements_with_Counterparties : UserControl
+public partial class ReconciliationStatementsWithCounterparties : UserControl
 {
-    public Reconciliation_Statements_with_Counterparties()
+    public ReconciliationStatementsWithCounterparties()
     {
         InitializeComponent();
     }

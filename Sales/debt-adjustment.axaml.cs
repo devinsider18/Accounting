@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Sales;
 
-public partial class debt_adjustment : UserControl
+public partial class DebtAdjustment : UserControl
 {
-    public debt_adjustment()
+    public DebtAdjustment()
     {
         InitializeComponent();
     }

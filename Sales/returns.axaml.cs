@@ -1,12 +1,10 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
-namespace Accounting;
+namespace Accounting.Sales;
 
-public partial class returns : UserControl
+public partial class Returns : UserControl
 {
-    public returns()
+    public Returns()
     {
         InitializeComponent();
     }
