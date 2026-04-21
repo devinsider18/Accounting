@@ -2,17 +2,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:p="using:Accounting"
              xmlns:ui="using:FluentAvalonia.UI.Controls"
              mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="750"
              x:Class="Accounting.Warehouse.WarehouseView">
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
-                <TextBlock Text="Склад" FontSize="28" FontWeight="SemiBold" />
-                <TextBlock Text="Управление запасами, инвентаризация и контроль товарных остатков" 
-                           Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+                <TextBlock Text="{x:Static p:Resources.WarehouseView_Title}" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="{x:Static p:Resources.WarehouseView_Desc}" Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
             </StackPanel>
-            <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
+            <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}"/>
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
                     <TextBlock Text="ДВИЖЕНИЕ И ЦЕНЫ" FontWeight="Bold" FontSize="14" Foreground="#D83B01" Margin="0,0,0,5"/>
