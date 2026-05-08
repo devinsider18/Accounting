@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Accounting;
+namespace Accounting.Dictionaries;
 
 public partial class DictionariesView : UserControl
 {

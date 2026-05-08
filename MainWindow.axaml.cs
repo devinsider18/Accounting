@@ -4,6 +4,9 @@ using Accounting.Bank;
 using Accounting.Sales;
 using Accounting.Purchases;
 using Accounting.Warehouse;
+using Accounting.Operation;
+using Accounting.Reports;
+using Accounting.Dictionaries;
 namespace Accounting
 {
     public partial class MainWindow : Window

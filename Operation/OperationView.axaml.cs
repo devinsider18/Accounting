@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Accounting;
+namespace Accounting.Operation;
 
 public partial class OperationView : UserControl
 {

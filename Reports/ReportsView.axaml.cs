@@ -1,6 +1,6 @@
 using Avalonia.Controls;
 
-namespace Accounting;
+namespace Accounting.Reports;
 
 public partial class ReportsView : UserControl
 {
