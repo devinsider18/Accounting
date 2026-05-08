@@ -27,19 +27,10 @@
                     </Button>
                     <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Edit" FontSize="24" Foreground="#881798"/>
+                            <ui:SymbolIcon Symbol="People" FontSize="24" Foreground="#881798"/>
                             <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Операции, введенные вручную" FontWeight="Medium"/>
-                                <TextBlock Text="Создание произвольных бухгалтерских проводок" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="List" FontSize="24" Foreground="#881798"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Журнал проводок" FontWeight="Medium"/>
-                                <TextBlock Text="Просмотр всех движений по счетам учета" FontSize="11" Opacity="0.6"/>
+                                <TextBlock Text="Начисление дивидендов" FontWeight="Medium"/>
+                                <TextBlock Text="Расчет и начисление дивидендов учредителям" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
