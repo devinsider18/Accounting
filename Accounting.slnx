@@ -1,9 +1,9 @@
 <Solution>
   <Configurations>
-    <Platform Name="Any CPU" />
     <Platform Name="x64" />
   </Configurations>
   <Project Path="Accounting.csproj">
-    <Platform Solution="*|x64" Project="x64" />
+    <Configuration Solution="Debug|x64" Project="Debug|x64" />
+    <Configuration Solution="Release|x64" Project="Release|x64" />
   </Project>
 </Solution>

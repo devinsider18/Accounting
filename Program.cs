@@ -86,8 +86,8 @@ namespace Accounting
         {
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
             {
-                if (Environment.OSVersion.Version.Build < 22000)
-                    return (false, "This application requires Windows 11 or later to run.");
+                if (Environment.OSVersion.Version.Build < 19045)
+                    return (false, "This application requires Windows 10 22H2 or later.");
             }
             else if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
             {
