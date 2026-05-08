@@ -1,0 +1,65 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             x:Class="Accounting.Dividend_Declaration"
+             Background="{DynamicResource ApplicationPageBackgroundThemeBrush}">
+    <Grid RowDefinitions="Auto, Auto, Auto, *, Auto" Margin="20">
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Начисление дивидендов" FontSize="24" FontWeight="SemiBold" />
+            <TextBlock Text="Журнал документов начисления дивидендов"
+                       Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" ItemWidth="350" Margin="0,0,0,15">
+            <StackPanel Spacing="5" Margin="0,0,15,10">
+                <CheckBox Content="Организация:" FontSize="12" Opacity="0.7" MinHeight="20" Margin="0,0,0,-5"/>
+                <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите..." />
+            </StackPanel>
+        </WrapPanel>
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button MinWidth="110" Height="40" Classes="accent">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <ui:SymbolIcon Symbol="Add" FontSize="16" />
+                        <TextBlock Text="Создать" />
+                    </StackPanel>
+                </Button>
+                <DropDownButton Height="40" Content="Создать на основании">
+                    <DropDownButton.Flyout>
+                        <MenuFlyout>
+                            <MenuItem Header="Выдача наличных" />
+                            <MenuItem Header="Платежное поручение" />
+                            <MenuItem Header="Списание с расчетного счета" />
+                        </MenuFlyout>
+                    </DropDownButton.Flyout>
+                </DropDownButton>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                <TextBox Width="250" Height="40" Watermark="Поиск" VerticalContentAlignment="Center">
+                    <TextBox.InnerRightContent>
+                        <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray" />
+                    </TextBox.InnerRightContent>
+                </TextBox>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="3" Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
+                CornerRadius="8" ClipToBounds="True" BorderThickness="1"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}">
+            <DataGrid Name="DividendsGrid" IsReadOnly="True" GridLinesVisibility="Horizontal" x:CompileBindings="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Date}" Width="110" />
+                    <DataGridTextColumn Header="Номер" Binding="{Binding Number}" Width="130" />
+                    <DataGridTextColumn Header="Начислено" Binding="{Binding AccruedAmount}" Width="120" />
+                    <DataGridTextColumn Header="Сумма налога" Binding="{Binding TaxAmount}" Width="120" />
+                    <DataGridTextColumn Header="Получатель" Binding="{Binding Recipient}" Width="150" />
+                    <DataGridTextColumn Header="Период" Binding="{Binding Period}" Width="100" />
+                    <DataGridTextColumn Header="Организация" Binding="{Binding Organization}" Width="150" />
+                    <DataGridTextColumn Header="Ответственный" Binding="{Binding ResponsiblePerson}" Width="150" />
+                    <DataGridTextColumn Header="Комментарий" Binding="{Binding Comment}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>
