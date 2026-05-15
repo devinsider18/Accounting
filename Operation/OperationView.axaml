@@ -55,15 +55,6 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Tag" FontSize="24" Foreground="#00B294"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Регламентные операции НДС" FontWeight="Medium"/>
-                                <TextBlock Text="Формирование книги покупок и книги продаж" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
                 </StackPanel>
             </Grid>
         </StackPanel>
