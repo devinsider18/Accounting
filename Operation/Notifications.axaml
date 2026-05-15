@@ -1,0 +1,62 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             x:Class="Accounting.Operation.Notifications"
+             x:CompileBindings="False"
+             Background="{DynamicResource ApplicationPageBackgroundThemeBrush}">
+    <Grid RowDefinitions="Auto, Auto, Auto, *, Auto" Margin="20">
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Уведомления об исчисленных суммах налогов" FontSize="24" FontWeight="SemiBold" />
+            <TextBlock Text="Журнал уведомлений по единому налоговому счету"
+                       Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
+        </StackPanel>
+        <WrapPanel Grid.Row="1" Orientation="Horizontal" ItemWidth="350" Margin="0,0,0,15">
+            <StackPanel Spacing="5" Margin="0,0,15,10">
+                <CheckBox Content="Организация:" FontSize="12" Opacity="0.7" MinHeight="20" Margin="0,0,0,-5" />
+                <ComboBox HorizontalAlignment="Stretch" PlaceholderText="Выберите..." />
+            </StackPanel>
+        </WrapPanel>
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <StackPanel Orientation="Horizontal" Spacing="10">
+                <Button MinWidth="110" Height="40" Classes="accent">
+                    <StackPanel Orientation="Horizontal" Spacing="8">
+                        <ui:SymbolIcon Symbol="Add" FontSize="16" />
+                        <TextBlock Text="Создать" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10">
+                <TextBox Width="250" Height="40" Watermark="Поиск" VerticalContentAlignment="Center">
+                    <TextBox.InnerRightContent>
+                        <ui:SymbolIcon Symbol="Find" Margin="0,0,10,0" Foreground="Gray" />
+                    </TextBox.InnerRightContent>
+                </TextBox>
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="3" Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}"
+                CornerRadius="8" ClipToBounds="True" BorderThickness="1"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}">
+            <DataGrid Name="NotificationsGrid" IsReadOnly="True" GridLinesVisibility="Horizontal" x:CompileBindings="False">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Width="40">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <ui:SymbolIcon Symbol="Document" FontSize="14" Opacity="0.6" HorizontalAlignment="Center" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Дата" Binding="{Binding Date}" Width="110" />
+                    <DataGridTextColumn Header="Номер" Binding="{Binding Number}" Width="130" />
+                    <DataGridTextColumn Header="Сумма" Binding="{Binding Amount}" Width="120" />
+                    <DataGridTextColumn Header="Организация" Binding="{Binding Organization}" Width="250" />
+                    <DataGridTextColumn Header="Состояние" Binding="{Binding Status}" Width="120" />
+                    <DataGridTextColumn Header="Ответственный" Binding="{Binding Responsible}" Width="150" />
+                    <DataGridTextColumn Header="Комментарий" Binding="{Binding Comment}" Width="*" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</UserControl>

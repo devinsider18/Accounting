@@ -8,14 +8,14 @@
     <ScrollViewer>
         <StackPanel Margin="40" Spacing="30">
             <StackPanel Spacing="5">
-                <TextBlock Text="Операции и Отчеты" FontSize="28" FontWeight="SemiBold" />
-                <TextBlock Text="Журналы проводок, закрытие периода, ЕНС и главные отчеты" 
+                <TextBlock Text="Операции" FontSize="28" FontWeight="SemiBold" />
+                <TextBlock Text="Журналы проводок и учет налогов" 
                            Foreground="{DynamicResource TextFillColorSecondaryBrush}" />
             </StackPanel>
             <Separator Height="1" Background="{DynamicResource DividerStrokeColorDefaultBrush}" />
             <Grid ColumnDefinitions="*, *" ColumnSpacing="40">
                 <StackPanel Grid.Column="0" Spacing="15">
-                    <TextBlock Text="УЧЕТ И ПЕРИОДЫ" FontWeight="Bold" FontSize="14" Foreground="#881798" Margin="0,0,0,5"/>
+                    <TextBlock Text="УЧЕТ И ЖУРНАЛЫ" FontWeight="Bold" FontSize="14" Foreground="#881798" Margin="0,0,0,5"/>
                     <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Library" FontSize="24" Foreground="#881798"/>
@@ -34,25 +34,24 @@
                             </StackPanel>
                         </StackPanel>
                     </Button>
-                    <TextBlock Text="ЗАКРЫТИЕ ПЕРИОДА" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Calendar" FontSize="24" Foreground="#881798"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Закрытие месяца" FontWeight="Medium"/>
-                                <TextBlock Text="Расчет амортизации, налогов и фиксация прибыли" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
                 </StackPanel>
                 <StackPanel Grid.Column="1" Spacing="15">
                     <TextBlock Text="НАЛОГИ И ЕНС" FontWeight="Bold" FontSize="14" Foreground="#00B294" Margin="0,0,0,5"/>
                     <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
                         <StackPanel Orientation="Horizontal" Spacing="15">
+                            <ui:SymbolIcon Symbol="Mail" FontSize="24" Foreground="#00B294"/>
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="Уведомления" FontWeight="Medium"/>
+                                <TextBlock Text="Журнал уведомлений об исчисленных суммах налогов" FontSize="11" Opacity="0.6"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Button>
+                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
+                        <StackPanel Orientation="Horizontal" Spacing="15">
                             <ui:SymbolIcon Symbol="Calculator" FontSize="24" Foreground="#00B294"/>
                             <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Единый налоговый счет (ЕНС)" FontWeight="Medium"/>
-                                <TextBlock Text="Уведомления, заявления и расчеты с бюджетом" FontSize="11" Opacity="0.6"/>
+                                <TextBlock Text="Операции ЕНС" FontWeight="Medium"/>
+                                <TextBlock Text="Журнал документов по единому налоговому счету" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
@@ -62,25 +61,6 @@
                             <StackPanel VerticalAlignment="Center">
                                 <TextBlock Text="Регламентные операции НДС" FontWeight="Medium"/>
                                 <TextBlock Text="Формирование книги покупок и книги продаж" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <TextBlock Text="СТАНДАРТНЫЕ ОТЧЕТЫ" FontWeight="Bold" FontSize="12" Opacity="0.5" Margin="0,15,0,5"/>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Document" FontSize="24"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Оборотно-сальдовая ведомость" FontWeight="Medium"/>
-                                <TextBlock Text="Главный отчет по всем счетам и остаткам (ОСВ)" FontSize="11" Opacity="0.6"/>
-                            </StackPanel>
-                        </StackPanel>
-                    </Button>
-                    <Button HorizontalAlignment="Stretch" Height="78" CornerRadius="8">
-                        <StackPanel Orientation="Horizontal" Spacing="15">
-                            <ui:SymbolIcon Symbol="Find" FontSize="24"/>
-                            <StackPanel VerticalAlignment="Center">
-                                <TextBlock Text="Анализ счета" FontWeight="Medium"/>
-                                <TextBlock Text="Детализация оборотов выбранного счета" FontSize="11" Opacity="0.6"/>
                             </StackPanel>
                         </StackPanel>
                     </Button>
