@@ -1,0 +1,58 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1200" d:DesignHeight="700"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             xmlns:reports="using:Accounting.Reports"
+             x:DataType="reports:trial_balance"
+             x:Class="Accounting.Reports.trial_balance">
+    
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Margin="20">
+        
+        <StackPanel Grid.Row="0" Spacing="15" Margin="0,0,0,20">
+            <TextBlock Text="Оборотно-сальдовая ведомость" FontSize="24" FontWeight="SemiBold"/>
+            
+            <WrapPanel Orientation="Horizontal" Margin="0,5,0,0">
+                <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,0,30,10" VerticalAlignment="Center">
+                    <TextBlock Text="Период:" VerticalAlignment="Center" FontSize="14" Opacity="0.7"/>
+                    <CalendarDatePicker Width="130"/>
+                    <TextBlock Text="—" VerticalAlignment="Center"/>
+                    <CalendarDatePicker Width="130"/>
+                </StackPanel>
+                
+                <StackPanel Orientation="Horizontal" Spacing="10" Margin="0,0,15,10" VerticalAlignment="Center">
+                    <TextBlock Text="Организация:" VerticalAlignment="Center" FontSize="14" Opacity="0.7"/>
+                    <ComboBox Width="300" />
+                </StackPanel>
+            </WrapPanel>
+        </StackPanel>
+        
+        <Grid Grid.Row="1" ColumnDefinitions="*, Auto" Margin="0,0,0,15">
+            <ScrollViewer Grid.Column="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+                <StackPanel Orientation="Horizontal" Spacing="10">
+                    <Button Content="Сформировать" Classes="accent" />
+                    <Button Content="Показать настройки" />
+                    <Button Content="Печать" />
+                    <Button>
+                        <ui:SymbolIcon Symbol="Save" />
+                    </Button>
+                    <ComboBox PlaceholderText="Регистр учета" Width="150" SelectedIndex="0">
+                         <ComboBoxItem>Бухгалтерский учет</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="10" Margin="10,0,0,0" VerticalAlignment="Center">
+                <TextBlock Text="∑" FontSize="18" VerticalAlignment="Center" Opacity="0.6"/>
+                <TextBox Width="120" Watermark="0.00" TextAlignment="Right" IsReadOnly="True" />
+            </StackPanel>
+        </Grid>
+        <Border Grid.Row="2" 
+                Background="{DynamicResource LayerOnMicaBaseAltFillColorDefaultBrush}" 
+                CornerRadius="8" ClipToBounds="True"
+                BorderBrush="{DynamicResource CardStrokeColorDefaultBrush}"
+                BorderThickness="1">
+            <TreeDataGrid Name="TrialBalanceGrid" Source="{Binding TrialBalanceSource}" />
+        </Border>
+    </Grid>
+</UserControl>
